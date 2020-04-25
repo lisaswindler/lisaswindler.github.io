@@ -28,7 +28,7 @@
 .work-box {
     /* margin-bottom: 200px; */
     position: absolute;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid turquoise;
     background:rgba(0, 0, 0, 0.5);
     width: 20%;
     padding: 10px;
@@ -43,6 +43,9 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.fa {
+    color: rgb(18, 160, 146);
+}
 a:link {
     color: #6c757d;
 }
@@ -123,6 +126,8 @@ textarea {
     font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
     font-size: 20px;
+    border-top: 1px solid turquoise;
+    padding-bottom: 30px;
   }
   
 @media only screen and (max-width: 962px) {
