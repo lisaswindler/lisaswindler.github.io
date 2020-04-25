@@ -11,9 +11,36 @@
     font-weight: bold;
 }
 
-h1 {
+.logo {
     font-family: 'Poiret One';
     letter-spacing: 2px;
+}
+
+.greeting {
+    font-family: 'Raleway', sans-serif;
+    background:rgba(0, 0, 0, 0.5);
+    padding-top: 230px;
+    padding-bottom: 230px;
+    /* margin-top: 200px;
+    margin-bottom: 200px; */
+}
+
+.work-box {
+    /* margin-bottom: 200px; */
+    position: absolute;
+    border: 1px solid rgb(255, 255, 255);
+    background:rgba(0, 0, 0, 0.5);
+    width: 20%;
+    padding: 10px;
+    top: 63%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+    color: white !important;
+    font-family: 'Raleway', sans-serif;
 }
 
 a:link {
@@ -31,9 +58,7 @@ a:hover {
 }
 
 body {
-    background-image: url("../images/gray-marble.jpg");
-    background-repeat: repeat;
-    background-color: #919497;
+    /* background-color: rgb(20, 37, 37); */
   }
 
 h2 {
@@ -80,12 +105,36 @@ textarea {
     width: inherit;
   }
 
-  .mycontainer {
-    background-color: white;
-  }
    /* .card {
     color: white;
     text-align: center;
     font-size: 15px;
     padding-top: 70px;
   } */
+
+  .jumbotron {
+    background-image: url("../images/lines.jpg");
+    background-size: cover;
+    position: relative;
+  }
+
+  .bio-box {
+    background-color: rgb(15, 18, 19);
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  
+@media only screen and (max-width: 962px) {
+    .work-box {
+        width: 30%;
+        top: 65%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .work-box {
+        width: 40%;
+        top: 70%;
+    }
+}    
