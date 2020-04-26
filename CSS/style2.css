@@ -1,7 +1,8 @@
-.profile-pic {
-    height: 100%
-}
-
+/* Body */
+body {
+    background-color: rgb(15, 18, 19);
+  }
+/* Nav */
 .navbar {
     font-family: 'Poiret One';
     letter-spacing: .5px;
@@ -14,21 +15,32 @@
 .logo {
     font-family: 'Poiret One';
     letter-spacing: 2px;
+    border-top: 2px solid rgb(255, 139, 93);
+    border-left: 2px solid rgb(255, 139, 93);
 }
 
+.navbar-nav {
+    border-right: 2px solid turquoise;
+    border-bottom: 2px solid turquoise;
+}
+
+/* Header */
 .greeting {
     font-family: 'Raleway', sans-serif;
     background:rgba(0, 0, 0, 0.5);
-    padding-top: 230px;
-    padding-bottom: 230px;
-    /* margin-top: 200px;
-    margin-bottom: 200px; */
+    padding-top: 300px;
+    padding-bottom: 300px;
 }
-
-.work-box {
-    /* margin-bottom: 200px; */
+.jumbotron {
+    background-image: url("../images/lines.jpg");
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.portfolio-box {
     position: absolute;
-    border: 1px solid turquoise;
     background:rgba(0, 0, 0, 0.5);
     width: 20%;
     padding: 10px;
@@ -41,105 +53,149 @@
     font-size: 20px;
     color: white !important;
     font-family: 'Raleway', sans-serif;
+    border-right: 1px solid turquoise;
+    border-bottom: 1px solid turquoise;
+    border-top: 1px solid rgb(255, 139, 93);
+    border-left: 1px solid rgb(255, 139, 93);
+}
+.heading1 {
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
+    top: 40%;
+}
+.heading2 {
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-.fa {
-    color: rgb(18, 160, 146);
-}
+/* Links */
 a:link {
-    color: #6c757d;
+    color: rgb(6, 53, 48);
 }
-
 a:visited {
-    color: #6c757d;
+    color: rgb(6, 53, 48);
 }
-
 a:hover {
-    color: #4a4d50;
+    color: rgb(13, 117, 107);
     text-decoration: none;
     font-weight: bold;
 }
 
-body {
-    /* background-color: rgb(20, 37, 37); */
-  }
-
-h2 {
-    font-size: 32px;
-    color: #919497;
-    border-bottom: 2px solid #ced4da;
-}
-
-form {
-    color: #919497;
-}
-
-.card-body {
-    font-family: 'Roboto';
-    letter-spacing: .5px;
-    color: #919497;
-}
-
-textarea {
-    max-width: 100%;
-    min-width: 100%;
-    border: 1px solid #ced4da;
-}
-
-.btn-primary {
-    background-color: #919497;
-    border: none;
-}
-
-.card-img-overlay {
-    /* background-color: #555555;
-    bottom: 3%; */
-    /* top: unset;
-    max-width: 98%;
-    margin: auto; */
-}
-
-.card-title {
-    position: absolute;
-    bottom: 10px;
-    z-index: 1;
-    background:rgba(255, 255, 255, 0.8);
-    color: black;
-    width: inherit;
-  }
-
-   /* .card {
-    color: white;
-    text-align: center;
-    font-size: 15px;
-    padding-top: 70px;
-  } */
-
-  .jumbotron {
-    background-image: url("../images/lines.jpg");
-    background-size: cover;
-    position: relative;
-  }
-
+/* Bio section */
   .bio-box {
-    background-color: rgb(15, 18, 19);
+    background-color: white;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
     font-size: 20px;
-    border-top: 1px solid turquoise;
-    padding-bottom: 30px;
+    position: relative;
+    color: rgb(13, 31, 13);
   }
-  
+
+  .bio-row {
+    border-left: 2px solid rgb(255, 139, 93);
+    border-right: 2px solid turquoise;
+  }
+
+/* Icons */
+.fa {
+    color: rgb(18, 160, 146);
+}
+
+/* Featured projects */
+.my-projects {
+    color: white;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Responsiveness */
 @media only screen and (max-width: 962px) {
-    .work-box {
+    .portfolio-box {
         width: 30%;
         top: 65%;
     }
 }
 
 @media only screen and (max-width: 640px) {
-    .work-box {
+    .portfolio-box {
         width: 40%;
         top: 70%;
     }
+    .heading1 {
+        top: 30%;
+    }
 }    
+
+@media only screen and (max-width: 575px) {
+    .logo {
+        border: none;
+    }
+    .navbar-nav {
+        border: none;
+        padding-right: 10px;
+    }
+}
+
+/* Portfolio page */
+.card-img-overlay {
+    background:rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    top: unset;
+    max-width: 98%;
+    margin: auto;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    border-right: 1px solid turquoise;
+    border-bottom: 1px solid turquoise;
+    border-top: 1px solid rgb(255, 139, 93);
+    border-left: 1px solid rgb(255, 139, 93);
+}
+
+.port-pic {
+    background-color: rgb(15, 18, 19);
+}
+
+.portfolio-title {
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Contact Page */
+form {
+    color: rgb(6, 53, 48);
+    font-family: 'Raleway', sans-serif;
+}
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    border: 1px solid #ced4da;
+    border-left: 2px solid rgb(255, 139, 93);
+}
+
+.form-control {
+    border-left: 2px solid rgb(255, 139, 93);
+}
+
+.btn {
+    background:rgba(0, 0, 0, 0.8);
+    font-family: 'Raleway', sans-serif;
+    border-right: 1px solid turquoise;
+    border-bottom: 1px solid turquoise;
+    border-top: 1px solid rgb(255, 139, 93);
+    border-left: 1px solid rgb(255, 139, 93);
+    color: white !important;
+}
+.contact-title {
+    font-size: 32px;
+    border-bottom: 1px solid turquoise;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(6, 53, 48);
+}
+
+

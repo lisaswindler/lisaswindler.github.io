@@ -31,9 +31,7 @@ a:hover {
 }
 
 body {
-    background-image: url("../images/gray-marble.jpg");
-    background-repeat: repeat;
-    background-color: #919497;
+    background-color: black;
   }
 
 h2 {
@@ -64,28 +62,19 @@ textarea {
 }
 
 .card-img-overlay {
-    /* background-color: #555555;
-    bottom: 3%; */
-    /* top: unset;
+    background-color: #555555;
+    bottom: 0;
+    top: unset;
     max-width: 98%;
-    margin: auto; */
+    margin: auto;
+    padding: 10px;
 }
 
-.card-title {
-    position: absolute;
-    bottom: 10px;
-    z-index: 1;
-    background:rgba(255, 255, 255, 0.8);
-    color: black;
-    width: inherit;
-  }
+/* New */
+.port-pic {
+    background-color: black;
+}
 
-  .mycontainer {
-    background-color: white;
-  }
-   /* .card {
-    color: white;
-    text-align: center;
-    font-size: 15px;
-    padding-top: 70px;
-  } */
+.portfolio-rows {
+    background-color: black;
+}
