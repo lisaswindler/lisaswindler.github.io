@@ -27,7 +27,7 @@ body {
 /* Header */
 .greeting {
     font-family: 'Raleway', sans-serif;
-    background:rgba(0, 0, 0, 0.5);
+    background:rgba(0, 0, 0, 0.6);
     padding-top: 300px;
     padding-bottom: 300px;
 }
@@ -105,11 +105,16 @@ a:hover {
 
 /* Featured projects */
 .my-projects {
-    color: white;
-    padding: 10px;
+    color: rgb(13, 31, 13);
+    padding-bottom: 70px;
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 18px;
+    background-position: top right;
+    background-color: white;
+}
+.port-container {
+    position: relative;
 }
 .featured-text {
     position: absolute;
@@ -120,44 +125,53 @@ a:hover {
     color: black;
     z-index: 1;
 }
-.image-row {
-    padding-bottom: 60px;
+.port-row {
+    position: absolute;
+    top: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
 }
-
-/* Responsiveness */
-@media only screen and (max-width: 962px) {
-    .portfolio-box {
-        width: 30%;
-        top: 65%;
-    }
+.port-pic-featured, .card-rounding {
+    border-radius: 7px;
+    background-color: rgb(15, 18, 19);
 }
-
-@media only screen and (max-width: 640px) {
-    .portfolio-box {
-        width: 40%;
-        top: 70%;
-    }
-    .heading1 {
-        top: 30%;
-    }
-}    
-
-@media only screen and (max-width: 575px) {
-    .logo {
-        border: none;
-    }
-    .navbar-nav {
-        border: none;
-        padding-right: 10px;
-    }
+.featured {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    position: absolute;
+}
+.card-img-text {
+    background:rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 7px;
+    padding-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    border-right: 1px solid turquoise;
+    border-bottom: 1px solid turquoise;
+    border-top: 1px solid rgb(255, 139, 93);
+    border-left: 1px solid rgb(255, 139, 93);
+    position: absolute;
 }
 
 /* Portfolio page */
 .card-img-overlay {
-    background:rgba(0, 0, 0, 0.8);
+    background:rgba(0, 0, 0, 0.6);
     bottom: 0;
     top: unset;
-    max-width: 98%;
+    max-width: 91%;
     margin: auto;
     padding: 10px;
     font-family: 'Raleway', sans-serif;
@@ -178,6 +192,9 @@ a:hover {
     text-align: center;
 }
 
+.portfolio-rows {
+    margin-bottom: 60px;
+}
 /* Contact Page */
 form {
     color: rgb(6, 53, 48);
@@ -195,7 +212,7 @@ textarea {
 }
 
 .btn {
-    background:rgba(0, 0, 0, 0.8);
+    background:rgba(0, 0, 0, 0.7);
     font-family: 'Raleway', sans-serif;
     border-right: 1px solid turquoise;
     border-bottom: 1px solid turquoise;
@@ -209,5 +226,62 @@ textarea {
     font-family: 'Raleway', sans-serif;
     color: rgb(6, 53, 48);
 }
+
+/* Responsiveness */
+@media only screen and (max-width: 962px) {
+    .card-img-text {
+        padding-top: 100px;
+    }
+}
+@media only screen and (max-width: 962px) {
+    .portfolio-box {
+        width: 30%;
+        top: 65%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .card-img-overlay {
+        max-width: 86%; 
+    }
+}
+@media only screen and (max-width: 640px) {
+    .portfolio-box {
+        width: 40%;
+        top: 70%;
+    }
+    .heading1 {
+        top: 30%;
+    }
+}    
+@media only screen and (max-width: 767px) {
+    .card-img-overlay {
+        max-width: 94%; 
+    }
+    .card-img-text {
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .logo {
+        border: none;
+    }
+    .navbar-nav {
+        border: none;
+        padding-right: 10px;
+    }
+    .card-img-text {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .card-img-overlay {
+        max-width: 90%; 
+        font-size: 12px;
+    }
+}
+
 
 
