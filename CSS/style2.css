@@ -111,6 +111,18 @@ a:hover {
     text-align: center;
     font-size: 18px;
 }
+.featured-text {
+    position: absolute;
+    background:rgba(0, 0, 0, 0.5);
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    z-index: 1;
+}
+.image-row {
+    padding-bottom: 60px;
+}
 
 /* Responsiveness */
 @media only screen and (max-width: 962px) {
