@@ -28,8 +28,6 @@ $(document).ready(function () {
         $(this).css("background", "rgba(0, 0, 0, 0.6)");
       });
 
-    // var imgTag = '<img class="card-img rounded-0 img-fluid p-0" src="images/' + imgName + '.jpg"></a>'
-
       $(".featured").hover(function(){
         $(this).addClass("card-img-text");
         var name = $(this).attr("value");
