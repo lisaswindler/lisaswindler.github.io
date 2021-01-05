@@ -172,7 +172,6 @@ a:hover {
     background:rgba(0, 0, 0, 0.6);
     bottom: 0;
     top: unset;
-    max-width: 91%;
     margin: auto;
     padding: 10px;
     font-family: 'Raleway', sans-serif;
@@ -196,6 +195,14 @@ a:hover {
     color: white;
     text-align: center;
 }
+.img-rel {
+  position: relative;
+}
+.card-img-absolute {
+  position: absolute;
+  top: 8px;
+}
+
 
 /* Contact Page */
 .contact-icons:hover {   
@@ -243,12 +250,6 @@ color: white !important;
         padding-top: 100px;
     }
 }
-
-@media only screen and (max-width: 991px) {
-    .card-img-overlay {
-        max-width: 86%; 
-    }
-}
 @media only screen and (max-width: 640px) {
     .portfolio-box {
         width: 40%;
@@ -258,9 +259,6 @@ color: white !important;
     }
 }    
 @media only screen and (max-width: 767px) {
-    .card-img-overlay {
-        max-width: 94%;
-    }
     .featured {
         padding-top: 50px;
         }
@@ -281,7 +279,6 @@ color: white !important;
 
 @media only screen and (max-width: 414px) {
     .card-img-overlay {
-        max-width: 90%; 
         font-size: 12px;
     }
 }
